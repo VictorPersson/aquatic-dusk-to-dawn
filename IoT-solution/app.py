@@ -1,9 +1,9 @@
 import requests, time
 from datetime import datetime, timedelta
+import APIKeys
 
-APIKey = "2154e51ef1aa3251848ae888514b3751"
 location = "Malmö"
-weatherURL = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={APIKey}"
+weatherURL = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={APIKeys.APIKey}"
 
 # Execute API call every 10 minutes
 startTime = time.time()
