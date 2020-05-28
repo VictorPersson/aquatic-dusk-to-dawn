@@ -23,7 +23,7 @@ while True:
     res = requests.get(url = weatherURL)
     data = res.json() 
 
-    sky = data["weather"][0]["main"] # "clear sky" , "few clouds", "scattered clounds", "broken clouds", "shower rain" , "rain" , "thundersctorm", "snow", "mist"
+    sky = data["weather"][0]["main"]
     sunrise = int(data["sys"]["sunrise"])
     sunset = int(data["sys"]["sunset"])
     
